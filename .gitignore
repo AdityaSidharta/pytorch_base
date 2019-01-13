@@ -105,3 +105,10 @@ venv.bak/
 
 #user-defined ignore files
 .idea/
+/data/
+/output/
+!/data/placeholder
+!/output/logs/placeholder
+!/output/model_checkpoint/placeholder
+!/output/result/placeholder
+!/output/result_metadata/placeholder
