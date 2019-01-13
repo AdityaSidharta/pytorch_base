@@ -18,4 +18,3 @@ pipenv install --dev
 pipenv run pip install black
 pipenv run pip install pip==18.0
 pipenv run python -m ipykernel install --user --name=ml_server_framework
-pipenv shell

@@ -6,6 +6,7 @@ help:
 
 setup:
 	bash bins/setup.sh
+	pipenv shell
 
 format:
 	black .
