@@ -71,7 +71,9 @@ def fit_model_full(
                 metric = metric_fn(model, data)
                 t.set_postfix({"loss": loss.item(), "metric": metric.item()})
                 [
-                    cb.on_batch_end(idx_batch, model, optimizer, loss.item(), metric.item())
+                    cb.on_batch_end(
+                        idx_batch, model, optimizer, loss.item(), metric.item()
+                    )
                     for cb in callbacks
                 ]
         if val_dataloader is not None:

@@ -29,7 +29,7 @@ def lr_find(model, dataloader, criterion, loss_fn, metric_fn, min_lr=1e-8, max_l
         val_dataloader=None,
     )
     train_loss = loss_recorder.smooth_batch_list
-    while train_loss[-1] > (train_loss[-2] * 2.):
+    while train_loss[-1] > (train_loss[-2] * 2.0):
         logger.info("removing last train_loss...")
         train_loss.pop()
     sns.lineplot(x=lr_finder.lr_schedule, y=loss_recorder.smooth_batch_list)
