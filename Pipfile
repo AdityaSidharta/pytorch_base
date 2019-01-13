@@ -12,6 +12,8 @@ pandas = "*"
 seaborn = "*"
 torch = "*"
 torchvision = "*"
+ipykernel = "*"
+kaggle = "*"
 
 [requires]
 python_version = "3.6"
